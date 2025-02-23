@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Homepage -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <!-- Pricing Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/pricing</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- FAQ Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/faq</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Blog Section -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Individual Blog Post Example -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog/article1</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- Contact Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/contact</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-</urlset>
+<!--
+  Sitemap Index untuk situs:
+  https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/
+  Dibuat dan diperbarui pada: 23 Februari 2025
+  FREKUENSI PEMBARUAN:
+    - sitemap_main.xml: Harian
+    - news-sitemap.xml: Harian (Untuk konten berita)
+    - image-sitemap.xml: Mingguan
+    - video-sitemap.xml: Mingguan
+    - voice-sitemap.xml: Harian
+  Tujuan: Memastikan semua konten utama diindeks secara optimal,
+           termasuk konten dinamis dan berita, guna mendominasi pasar Indonesia.
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/sitemap_main.xml</loc>
+    <lastmod>2025-02-23</lastmod>
+    <!-- Frekuensi: Harian -->
+  </sitemap>
+  <sitemap>
+    <loc>https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/news-sitemap.xml</loc>
+    <lastmod>2025-02-23</lastmod>
+    <!-- Frekuensi: Harian (Untuk konten berita) -->
+  </sitemap>
+  <sitemap>
+    <loc>https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/image-sitemap.xml</loc>
+    <lastmod>2025-02-23</lastmod>
+    <!-- Frekuensi: Mingguan -->
+  </sitemap>
+  <sitemap>
+    <loc>https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/video-sitemap.xml</loc>
+    <lastmod>2025-02-23</lastmod>
+    <!-- Frekuensi: Mingguan -->
+  </sitemap>
+  <sitemap>
+    <loc>https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/voice-sitemap.xml</loc>
+    <lastmod>2025-02-23</lastmod>
+    <!-- Frekuensi: Harian -->
+  </sitemap>
+</sitemapindex>
