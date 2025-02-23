@@ -1,42 +1,107 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# robots.txt dioptimalkan untuk pasar Indonesia - Versi 2025
+# Situs: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/
+# Dibuat dan diperbarui pada: 23 Februari 2025
+# Tujuan: Memungkinkan pengindeksan penuh (konten, gambar, video, berita, mobile & suara) agar mendominasi pasar Indonesia.
+# Catatan: Pastikan direktori yang tercantum (misalnya, /admin/, /private/, /temp/, /backup/, /old/) benar-benar ada agar tidak memblokir konten relevan.
+
+# ==============================================================================
+# Instruksi umum untuk semua robot (User-agent: *)
+# ==============================================================================
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
-Disallow: /private/
+Crawl-delay: 2
+Allow: /
+Disallow: /admin/        # Direktori administrasi (konfirmasi jika ada)
+Disallow: /private/      # Direktori privat (konfirmasi jika ada)
+Disallow: /temp/         # Direktori sementara (konfirmasi jika ada)
+Disallow: /backup/       # Direktori cadangan (konfirmasi jika ada)
+Disallow: /old/          # Versi lama (konfirmasi jika ada)
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+# ==============================================================================
+# Instruksi khusus untuk robot prioritas
+# ==============================================================================
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
-
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+# Googlebot dan variannya
 User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Mobile
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+# (Aturan Allow: / sudah tercakup oleh aturan umum)
+
+User-agent: Googlebot-Video
+# (Aturan Allow: / sudah tercakup oleh aturan umum)
+
+User-agent: Googlebot-News
+Crawl-delay: 0.5
+# Prioritas untuk pembaruan berita (Google News)
+
+# Robot sekunder dengan pengaturan bandwidth
 User-agent: Bingbot
+Crawl-delay: 2
+
+User-agent: Yandex
+Crawl-delay: 2
+
+User-agent: Baidubot
+Crawl-delay: 2
+
+User-agent: DuckDuckGoBot
+Crawl-delay: 2
+
+# ==============================================================================
+# Pemblokiran eksplisit untuk robot yang tidak diinginkan atau agresif
+# ==============================================================================
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+# ==============================================================================
+# Robot lokal dan Asia yang relevan (harap verifikasi keabsahan crawler ini)
+# ==============================================================================
+User-agent: KompasBot
+Crawl-delay: 2
+# Asumsikan KompasBot adalah crawler resmi dari Kompas; sesuaikan jika perlu.
+
+User-agent: DetikBot
+Crawl-delay: 2
+# Asumsikan DetikBot adalah crawler resmi dari Detik; sesuaikan jika perlu.
+
+# ==============================================================================
+# Facebot untuk berbagi di Facebook (penting di Indonesia)
+# ==============================================================================
+User-agent: Facebot
 Allow: /
+# Facebot diizinkan untuk mengambil metadata saat konten dibagikan di Facebook.
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
+# ==============================================================================
+# Deklarasi domain utama
+# ==============================================================================
+Host: https://clairvoyancemedium.github.io
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+# ==============================================================================
+# Sitemap untuk pengindeksan menyeluruh
+# ==============================================================================
+Sitemap: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/sitemap.xml
+# Sitemap utama yang mencakup semua URL penting.
+
+Sitemap: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/news-sitemap.xml
+# Sitemap khusus untuk berita, dioptimalkan untuk Google News.
+
+Sitemap: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/image-sitemap.xml
+# Sitemap untuk pengindeksan gambar, saluran penting untuk pencarian visual.
+
+Sitemap: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/video-sitemap.xml
+# Sitemap untuk pengindeksan video.
+
+Sitemap: https://clairvoyancemedium.github.io/Bagaimana-cara-mengembalikan-cintamu-dengan-cepat.github.io/voice-sitemap.xml
+# Sitemap khusus untuk pencarian suara (Google Assistant, dll.)
